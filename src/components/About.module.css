@@ -85,6 +85,6 @@
   }
 
   .photoFrame {
-    aspect-ratio: 1;
+    aspect-ratio: 3/4; /* ← cambiá el 1 por 3/4 */
   }
 }
