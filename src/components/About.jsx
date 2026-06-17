@@ -23,6 +23,12 @@ export default function About() {
               donde pueda seguir creciendo y aportar valor desde el primer día.
             </p>
 
+            <div className={styles.photoMobile}>
+              <div className={styles.photoFrame}>
+                <img src="/foto.jpg" alt="Facundo Calabrese" className={styles.photo} />
+              </div>
+            </div>
+
             <div className={styles.skills}>
               <div className={styles.skillGroup}>
                 <h3>Backend</h3>

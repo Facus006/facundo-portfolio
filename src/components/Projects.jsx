@@ -8,6 +8,7 @@ const projects = [
     tech: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'MySQL', 'React', 'Docker', 'JUnit'],
     github: 'https://github.com/Facus006/TurnoFlow',
     githubFront: 'https://github.com/Facus006/TurnoFlow-Front',
+    demo: 'https://turno-flow-front.vercel.app',
     highlight: true,
   },
   {
@@ -45,6 +46,11 @@ export default function Projects() {
                   <h3 className={styles.projectName}>{p.name}</h3>
                 </div>
                 <div className={styles.links}>
+                  {p.demo && (
+                    <a href={p.demo} target="_blank" rel="noopener noreferrer" className={styles.link}>
+                      Demo ↗
+                    </a>
+                  )}
                   {p.githubFront && (
                     <a href={p.githubFront} target="_blank" rel="noopener noreferrer" className={styles.link}>
                       Frontend ↗

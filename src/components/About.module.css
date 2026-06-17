@@ -53,7 +53,6 @@
 }
 
 .photoWrapper {
-  position: sticky;
   top: 6rem;
 }
 
@@ -72,19 +71,42 @@
   display: block;
 }
 
+.photoMobile {
+  display: none;
+  max-width: 200px;
+  margin: 1.5rem auto;
+}
+
+.photoMobile .photoFrame {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  aspect-ratio: 3/4;
+}
+
 @media (max-width: 640px) {
   .grid {
     grid-template-columns: 1fr;
-    gap: 2rem;
   }
 
   .photoWrapper {
-    position: static;
-    max-width: 200px;
-    margin: 0 auto;
+    display: none;
   }
 
-  .photoFrame {
-    aspect-ratio: 3/4; /* ← cambiá el 1 por 3/4 */
+  .photoMobile {
+    display: flex;
+    max-width: 100%;
+    margin: auto auto;
+    justify-content: center;
+  }
+
+  .photoMobile .photoFrame {
+    aspect-ratio: 4/4;
+    max-height: 250px;
+    overflow: hidden;
+  }
+
+  .photoMobile .photo {
+    object-position: center center;
   }
 }
