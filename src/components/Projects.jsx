@@ -24,6 +24,7 @@ const projects = [
     description: 'Plataforma para compartir y gestionar mods de simuladores de carreras (rFactor, Assetto Corsa). Primer proyecto fullstack completo, desarrollado de forma independiente hace más de 2 años.',
     tech: ['Java', 'Spring Boot', 'JWT', 'React', 'Vite', 'MySQL', 'Docker'],
     github: 'https://github.com/Facus006/Api-Lcr',
+    githubFront: 'https://github.com/Facus006/LCR-Front',
   },
 ]
 
